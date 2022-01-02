@@ -2,27 +2,14 @@ body#page-study {
     #container {
         width: 100vw;
         height: 100vh;
-        .page-header {
-            background-color: $color-primary;
-            display: flex;
-            flex-direction: column;
-        }
-        .header-content {
-            width: 90%;
-            margin: 3.2rem auto;
-            position: relative;
-            strong {
-                font: 700 3.6rem Archivo;
-                color: $color-title-in-primary;
-                line-height: 4.2rem;
-            }
-        }
+        
         #search-teachers {
-            margin-top: 3.2rem;
+            margin: 3.2rem 0 -4rem;
             label {
                 color: $color-text-in-primary;
             }
-            .select-block {
+            .select-block,
+            .input-block {
                 margin-bottom: 1.4rem;
             }
             button {
@@ -45,52 +32,8 @@ body#page-study {
                 }
             }
         }
-        .top-bar-container {
-            width: 90%;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 1.6rem 0;
-            a {
-                height: 3.2rem;
-                transition: opacity 0.2s;
-                &:hover {
-                    opacity: 0.6;
-                }
-            }
-            img {
-                height: 1.6rem;
-            }
-        }
-        .select-block .input-block label {
-            font-size: 1rem;
-            color: red;
-        }
-        .input-block input,
-        .select-block select {
-            width: 100%;
-            height: 5.6rem;
-            margin-top: 0.8rem;
-            border-radius: 0.8rem;
-            background: $color-line-in-white;
-            outline: 0;
-            padding: 1.6rem Archivo;
-            font: 1.6rem Archivo;
-        }
-        .input-block {
-            position: relative;
-        }
-        .input-block:focus-within::after {
-            content: "";
-            width: calc(100% - 3.2rem);
-            height: 2px;
-            background: $color-primary-light;
-            position: absolute;
-            left: 1.6rem;
 
-            bottom: 0px;
-        }
+        
     }
     main {
         margin: 0 auto;
@@ -215,12 +158,12 @@ body#page-study {
                 display: initial;
                 margin-left: 16px;
             }
-            button{
+            button {
                 width: 245px;
                 font-size: 16px;
                 justify-content: center;
                 font-weight: 600;
-                img{
+                img {
                     margin-right: 16px;
                 }
             }
