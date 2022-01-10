@@ -1,11 +1,11 @@
-
-
 body#page-landing {
     background: $color-primary;
     #container {
         color: $color-text-in-primary;
         .logo-container img {
-            height: 10rem;
+           height: 11rem;
+            width: auto;
+            
         }
         .logo-container {
             text-align: center;
@@ -25,8 +25,8 @@ body#page-landing {
             justify-content: center;
             margin: 3.2rem 0;
             a {
-                width: 30rem;
-                height: 10.4rem;
+                width: 25rem;
+                height: 7.4rem;
                 border-radius: 0.8rem;
                 margin-right: 1.6rem;
                 font: 700 2.4rem Archivo;
@@ -44,7 +44,7 @@ body#page-landing {
             .study {
                 background: $color-primary-lighter;
                 &:hover {
-                    background: $color-primary-light;
+                    filter: brightness(0.9);
                 }
             }
             .give-classes {
@@ -66,8 +66,8 @@ body#page-landing {
         }
     }
 }
-@media(max-widht:699px){
-    :root{
+@media (max-width: 1100px) {
+    :root {
         font-size: 40%;
     }
 }
@@ -79,7 +79,7 @@ body#page-landing {
         grid-template-rows: 350px 1fr;
         grid-template-areas: "proffy image image" "button button texting";
         column-gap: 87px;
-        row-gap:86px;
+        row-gap: 86px;
         .logo-container {
             grid-area: proffy;
             text-align: initial;
@@ -87,9 +87,10 @@ body#page-landing {
             margin: 0;
             img {
                 height: 127px;
+                width: auto;
             }
         }
-        .buttons-container{
+        .buttons-container {
             grid-area: button;
             justify-content: flex-start;
             margin: 0;
@@ -105,3 +106,4 @@ body#page-landing {
         }
     }
 }
+
